@@ -5,15 +5,15 @@
 Принцип DRY вимагає уникати дублювання коду. Це означає, що якщо один і той самий фрагмент коду повторюється більше одного разу, його слід винести в окрему функцію чи клас. У вашому коді цей принцип реалізовано через методи, які використовуються для відображення інформації про продукти та інвентар. Наприклад, метод Display() в класі Product та метод ShowInventory() в класі Warehouse.
 Метод Display() виводить інформацію про продукт (назва, ціна та валюта). Цей метод використовується не тільки в класі Product, а й в класі Warehouse для відображення списку всіх продуктів на складі.
 
-- **File**: [Product.cs](./Product.cs), [Warehouse.cs](./Warehouse.cs)
-- **Lines**: [Product.Display()] (./Lab1/Product.cs#23), [Warehouse.ShowInventory() (./Lab1/Warehouse.cs#30)
+- **File**: [`Product.cs`](./Lab1/Product.cs), [`Warehouse.cs`](./Lab1/Warehouse.cs)
+- **Lines**: [`Product.Display()`](./Lab1/Product.cs#23), [`Warehouse.ShowInventory()`](./Lab1/Warehouse.cs#30)
 
 ## 2. KISS (Keep It Simple, Stupid)
 
 Принцип KISS полягає в тому, щоб код був простим і зрозумілим. У вашому коді клас Product містить метод ApplyDiscount(), який реалізує одну конкретну задачу — застосування знижки. Логіка цього методу проста, тому що він просто віднімає кількість центів з ціни та створює новий об'єкт Money для оновленої ціни.
 
-- **File**: [Product.cs](./Product.cs)
-- **Lines**: [Product.ApplyDiscount()] (./Lab1/Product.cs#)
+- **File**: [`Product.cs`](./Lab1/Product.cs)
+- **Lines**: [`Product.ApplyDiscount()`](./Lab1/Product.cs#14)
 
 ## 3. SOLID Principles
 
@@ -25,14 +25,15 @@
 - Клас Warehouse відповідає за управління списком продуктів.
 - Клас Reporting генерує звіти по інвентарю.
 
-- **Files**: [Money.cs](./Money.cs./Warehouse.cs), [Reporting.cs](./Reporting.cs)
+- **Files**: [`Money.cs`](./Lab1/Money.cs./Warehouse.cs),
+- [`Reporting.cs`](./Lab1/Reporting.cs)
 
 ### 3.2. O - Open/Closed Principle
 
 Принцип OCP стверджує, що клас повинен бути відкритий для розширення, але закритий для модифікацій. Наприклад, якщо ви хочете додати нові види знижок для продуктів, ви можете просто додати нові методи в клас Product, не змінюючи існуючий код.
 
-- **File**: [Product.cs](./Product.cs)
-- **Lines**: [Product.ApplyDiscount()] (./Lab1/Product.cs#14)
+- **File**: [`Product.cs`](./Lab1/Product.cs)
+- **Lines**: [`Product.ApplyDiscount()`](./Lab1/Product.cs#14)
 
 ### 3.3. L - Liskov Substitution Principle
 
@@ -50,8 +51,8 @@
 
 Принцип DIP вимагає, щоб класи залежали від абстракцій, а не від конкретних реалізацій. Клас Reporting залежить від абстракції Warehouse (в даному випадку це клас), а не від конкретної реалізації складу.
 
-- **File**: [Reporting.cs](./Reporting.cs)
-- **Lines**: [Reporting(Warehouse warehouse)] (./Lab/Reporting.cs#6)
+- **File**: [`Reporting.cs`](./Lab1/Reporting.cs)
+- **Lines**: [`Reporting(Warehouse warehouse)`](./Lab/Reporting.cs#6)
 
 ## 4. YAGNI (You Aren't Gonna Need It)
 
@@ -63,8 +64,8 @@
 
 Принцип Composition Over Inheritance вимагає використання композиції замість успадкування для досягнення більшої гнучкості. У вашому коді замість використання спадкування ви створюєте класи, які містять інші об'єкти, що демонструє композицію. Наприклад, клас Warehouse містить список об'єктів Product, замість того щоб успадковувати від якогось базового складу.
 
-- **File**: [Warehouse.cs](./Warehouse.cs)
-- **Lines**: [private List<Product> products] (./Lab1/Product.cs#7)
+- **File**: [`Warehouse.cs`](./Lab1/Warehouse.cs)
+- **Lines**: [`private List<Product> products`](./Lab1/Product.cs#7)
 
 ## 6. Program to Interfaces, Not Implementations
 
