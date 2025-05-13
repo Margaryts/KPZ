@@ -1,0 +1,14 @@
+D:\КПЗ\KPZ\Lab2\Task4\Task4\bin\Debug\net7.0\Task4.exe
+D:\КПЗ\KPZ\Lab2\Task4\Task4\bin\Debug\net7.0\Task4.deps.json
+D:\КПЗ\KPZ\Lab2\Task4\Task4\bin\Debug\net7.0\Task4.runtimeconfig.json
+D:\КПЗ\KPZ\Lab2\Task4\Task4\bin\Debug\net7.0\Task4.dll
+D:\КПЗ\KPZ\Lab2\Task4\Task4\bin\Debug\net7.0\Task4.pdb
+D:\КПЗ\KPZ\Lab2\Task4\Task4\obj\Debug\net7.0\Task4.GeneratedMSBuildEditorConfig.editorconfig
+D:\КПЗ\KPZ\Lab2\Task4\Task4\obj\Debug\net7.0\Task4.AssemblyInfoInputs.cache
+D:\КПЗ\KPZ\Lab2\Task4\Task4\obj\Debug\net7.0\Task4.AssemblyInfo.cs
+D:\КПЗ\KPZ\Lab2\Task4\Task4\obj\Debug\net7.0\Task4.csproj.CoreCompileInputs.cache
+D:\КПЗ\KPZ\Lab2\Task4\Task4\obj\Debug\net7.0\Task4.dll
+D:\КПЗ\KPZ\Lab2\Task4\Task4\obj\Debug\net7.0\refint\Task4.dll
+D:\КПЗ\KPZ\Lab2\Task4\Task4\obj\Debug\net7.0\Task4.pdb
+D:\КПЗ\KPZ\Lab2\Task4\Task4\obj\Debug\net7.0\Task4.genruntimeconfig.cache
+D:\КПЗ\KPZ\Lab2\Task4\Task4\obj\Debug\net7.0\ref\Task4.dll
